@@ -1,0 +1,164 @@
+DevOps:
+cultura de trabajo
+comunicacion con las areas de desarrollo y operaciones
+cambio cultural hacia la colaboracion e integracion de ambos equipos  
+ 
+
+Integracion continua:
+compilacion y ejecucion de pruebas de todo un rpoyecto.
+ -compilar
+ -analisis de codigo
+ -pruebas 
+
+validar que el codigo producido e integrado con los desarrolladores y otros componentes
+funcionan.
+
+
+Entrega continua:
+construccion, pruebas y liberacion del software de forma mas rapida, reduciedo los tiempos y costos
+
+Etapas:
+1. Automatizacion de la compilacion e integracion
+  -creacion de archivos 
+  -desarrolladores implementan nuevas funciones estas son integradas con el codigo
+2. Automatizacion de pruebas
+  -se prueba la nueva version del codigo
+3. Automatizacion de implementacion
+  -se implementan nuevas versiones en el ambiente de produccion
+ 
+
+QA: control de calidad
+
+Dependencia: conjunto de dependencias de librerias
+arqueotipo: plantilla
+goals: comando que recibe maven como parametro 
+scape: alcance de la dependencia: compli,test, runtime,import
+
+
+
+Testing continuo:
+
+
+Nexus:
+Repositorio de artefactos
+ -snapshot
+ -release
+ 
+tipos de repositorios: group,proxy,hosted
+
+Sonarqube:
+plataforma para evaluar codigo y realizar pruebas de codigo estatico
+
+Jenkins:
+Servicio de integracion continua con plugins que agregan funcionalidades al proyecto
+
+Maven:
+herramienta para la gestion y construccion de proyectos Java.
+
+
+Arquitectura:
+Diseno del proyecto al que se quiere llegar
+
+
+ Docker:
+ 
+ automatiza el despliegue de aplicaciones
+ dentro de contenderos 
+  
+ contenedores de mis aplicaciones 
+ consume lo mas minimo recursos
+  
+ imagenes basicas sistemas operativos
+ imagenes con la aplicacion
+
+ 
+                      -IMAGEN:
+
+                       una imagen es una plantilla con instrucciones para crear un contenedor
+                       crear imagenes basadas en otra imagen
+                       base para crear contenedores
+                   
+                      -CONTENEDORES:
+                      
+                       es una instancia ejecutable de una imagen, se define por su imagen
+                       basados en una o mas imagenes	
+
+                     
+                       
+
+        usuario Docker Hub:
+                       mcsteven
+                       mc111555333 
+
+
+                      FROM: de donde quiero crear la nueva imagen
+                      MAINTAINER: quien es el autor de la imagen con su nombre y correo
+                      RUN: ejecutar los comandos en la propia imagen  
+                      EXPOSE: cual es el puerto que va usar el contenedor 
+                        
+            
+
+                      COMANDOS DOCKER:
+                   
+                      informacion contenedor: docker inspect id_contenedor
+                      
+                      borrar contenedor: docker rm id_contenedor
+                      
+                      listar imagenes: docker images
+                      
+                      crear imagen: docker build -t nombre_imagen 
+                                    docker pull nombre_imagen
+                      
+                      crear fichero: touch Dockerfile
+
+                      crear contenedor: sudo docker build -t="nombre"
+                                        sudo docker run nombre_imagen
+
+                      status container: sudo docker ps -a
+
+                      buscar Docker hub: sudo docker search nombre_imagen
+                        
+                      docker file: todos los comandos, comprimir todos los codigos
+
+                     
+                      docker commit id_imagen nombre_nueva_imagen
+
+                      salir contenedor: ctrl + pq
+
+                      redirigir puerto: sudo docker run -d -p 86:80 nombre_imagen
+
+
+                      
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
